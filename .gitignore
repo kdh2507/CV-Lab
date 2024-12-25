@@ -1,0 +1,5 @@
+# Ignore all .idea folder contents
+.idea/
+
+# Ignore model checkpoints
+checkpoints/
