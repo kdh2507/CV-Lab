@@ -2,4 +2,4 @@
 .idea/
 
 # Ignore model checkpoints
-checkpoints/
+FasterR-CNN/checkpoints/

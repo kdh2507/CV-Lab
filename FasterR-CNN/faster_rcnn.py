@@ -101,8 +101,8 @@ def train_model():
     transform = transforms.Compose([
         ToTensor()
     ])
-    train_data = VOCDataset(root="data", image_set='train', transform=transform)
-    val_data = VOCDataset(root="data", image_set='val', transform=transform)
+    train_data = VOCDataset(root="../data", image_set='train', transform=transform)
+    val_data = VOCDataset(root="../data", image_set='val', transform=transform)
 
     train_loader = DataLoader(train_data, batch_size=batch_size, num_workers=4, shuffle=True, collate_fn=collate_fn)
     val_loader = DataLoader(val_data, batch_size=batch_size, num_workers=4, shuffle=False, collate_fn=collate_fn)
